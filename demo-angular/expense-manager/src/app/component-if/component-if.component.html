@@ -1,0 +1,19 @@
+<h2>Component If Demo</h2>
+
+<span *ngIf="age < 18">Your Age: 18</span>
+
+<span>{{listEmployeeCode}}</span>
+
+<!-- <span>{{listEmployee}}</span> -->
+
+<div>
+  <select>
+    <option *ngFor="let emp of listEmployee" value="{{emp.getEmpCode()}}">{{emp.showInfo()}}</option>
+  </select>
+</div>
+
+<div>
+  <button type="button" (click)="dec()" title="smaller">-</button>
+  <button type="button" (click)="inc()" title="bigger">+</button>
+  <span [style.font-size.px]="size">FontSize: {{size}}px</span>
+</div>

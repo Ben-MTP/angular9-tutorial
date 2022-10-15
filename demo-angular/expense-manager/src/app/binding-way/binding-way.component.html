@@ -1,0 +1,32 @@
+<h2>318 - Angular 9 - Two-Way Data Binding ngModel. Liên kết dữ liệu 2 chiều</h2>
+
+<p>
+  Hướng dẫn cách lấy dữ liệu từ 2 chiều <br>
+
+  Chiều 1: Lấy từ trong code ra ngoài thẻ HTML <br>
+
+  Chiều 2: Lấy từ trong thẻ HTML vào trong Code để làm binding cho phần khác. <br>
+
+  Việc gán từ HTML sẽ thông qua một biến trong Typescript, cập nhật giá trị vào trong biến đó <br>
+
+  Mỗi khi có nghiệp vụ cần gọi giá trị đó ra thì nó sẽ tự tính toán và trả về giá trị thích hợp. <br>
+
+  Ví dụ làm bài toàn cộng/trừ/nhân/chia 2 số xem sao <br>
+
+
+
+</p>
+
+<div> Xin chào {{myName}} nhé</div>
+
+<span>Enter your name: </span><input type="text" [(ngModel)] = "myName">
+
+<hr>
+
+<div>
+  <span>Number 1: </span> <input type="number" [(ngModel)] = "number1"><br>
+  <span>Operator: </span> <input type="text"   [(ngModel)] = "operator"><br>
+  <span>Number 2: </span> <input type="number" [(ngModel)] = "number2"><br>
+  <button (click)="onExecute()">Execute</button>
+  <span>Result {{result}}</span>
+</div>

@@ -1,0 +1,35 @@
+<h2>319 - Angular 9 - Events binding - Liên kết sự kiện</h2>
+
+<p>
+  // Full list of Angular Events<br>
+(click)="myFunction()"      <br>
+(dblclick)="myFunction()"   <br>
+(submit)="myFunction()"<br>
+(blur)="myFunction()"  <br>
+(focus)="myFunction()" <br>
+(scroll)="myFunction()"<br>
+(cut)="myFunction()"<br>
+(copy)="myFunction()"<br>
+(paste)="myFunction()"<br>
+(keyup)="myFunction()"<br>
+(keypress)="myFunction()"<br>
+(keydown)="myFunction()"<br>
+(mouseup)="myFunction()"<br>
+(mousedown)="myFunction()"<br>
+(mouseenter)="myFunction()"<br>
+(drag)="myFunction()"<br>
+(drop)="myFunction()"<br>
+(dragover)="myFunction()"<br>
+
+</p>
+
+<div>Số tuổi hiện tại là: {{age}}</div>
+<span *ngIf="age < 0">Số tuổi của bạn không thể nhỏ hơn 0</span>
+<span *ngIf="age > 18">Bạn đã trên 18 tuổi</span>
+
+<span *ngIf="age < 17; then condition1; else condition2"></span>
+
+<ng-template #condition1>Bạn dưới 17 tuổi</ng-template>
+<ng-template #condition2>Bạn trên 17 tuổi</ng-template>
+<button (click)="tangtuoi()">Tăng</button>
+<button (click)="giamtuoi()">Giảm</button>
