@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { CommonService } from '../Services/common.service';
 
 @Component({
   selector: 'app-component-if',
@@ -10,13 +11,18 @@ export class ComponentIfComponent implements OnInit {
   private empCode: string | any;
   private empName: string | any;
 
-  age: any = 20;
+  public age: number = 10;
 
   public listEmployeeCode: number[] = [];
   public listEmployee: Employee[] = [];
   public vehicles = ['', '', '', '', '', ''];
 
-  constructor() {
+  /**
+   * Hàm khởi tạo với Common If
+   * @param common Biến sử dụng để gọi đến CommonService
+   */
+  constructor(private common: CommonService) {
+    this.age = common.age;
   }
 
   @Input() size!: number | string;

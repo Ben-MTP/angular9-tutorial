@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from '../Services/common.service';
 // import { ComponentIfComponent } from '../component-if/component-if.component';
 
 @Component({
@@ -12,18 +13,22 @@ export class EventBindingComponent implements OnInit {
 
   // public component: ComponentIfComponent | any = new ComponentIfComponent();
 
-  constructor() { }
+  constructor(private common: CommonService) {
+    this.age = common.age;
+  }
 
   ngOnInit(): void {
     
   }
 
   tangtuoi(): void {
-    this.age++;
+    this.common.age++;
+    this.age = this.common.age;
   }
 
   giamtuoi(): void{
-    this.age--;
+    this.common.age--;
+    this.age = this.common.age;
   }
 
 }

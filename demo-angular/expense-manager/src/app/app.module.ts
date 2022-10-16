@@ -11,6 +11,9 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { ComponentPipeComponent } from './component-pipe/component-pipe.component';
 import { ComponentRoutingComponent } from './component-routing/component-routing.component';
 import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ServiceComponent } from './service/service.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,9 @@ import { AboutComponent } from './about/about.component';
     ComponentPipeComponent,
     ComponentRoutingComponent,
     AboutComponent,
+    HomeComponent,
+    PageNotFoundComponent,
+    ServiceComponent,
   ],
   imports: [
     BrowserModule,
