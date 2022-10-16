@@ -8,6 +8,9 @@ import { ComponentIfComponent } from './component-if/component-if.component';
 import { BindingWayComponent } from './binding-way/binding-way.component';
 import { FormsModule } from '@angular/forms';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { ComponentPipeComponent } from './component-pipe/component-pipe.component';
+import { ComponentRoutingComponent } from './component-routing/component-routing.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +19,9 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
     ComponentIfComponent,
     BindingWayComponent,
     EventBindingComponent,
+    ComponentPipeComponent,
+    ComponentRoutingComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
