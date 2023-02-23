@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NgTemplateComponent } from './ng-template/ng-template.component';
 import { PipeTemplateComponent } from './pipe-template/pipe-template.component';
+import { ServiceTemplateComponent } from './service-template/service-template.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: 'bindingway', component: BindingWayComponent},
   {path: 'ng-template', component: NgTemplateComponent},
   {path: 'pipe', component: PipeTemplateComponent},
+  {path: 'service', component: ServiceTemplateComponent},
   {path: 'demo', component: ComponentDemoComponent},
   {path: 'pipe', component: ComponentPipeComponent},
   {path: 'routing', component: ComponentRoutingComponent},

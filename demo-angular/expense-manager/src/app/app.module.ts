@@ -16,6 +16,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ServiceComponent } from './service/service.component';
 import { NgTemplateComponent } from './ng-template/ng-template.component';
 import { PipeTemplateComponent } from './pipe-template/pipe-template.component';
+import { ServiceTemplateComponent } from './service-template/service-template.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { PipeTemplateComponent } from './pipe-template/pipe-template.component';
     ServiceComponent,
     NgTemplateComponent,
     PipeTemplateComponent,
+    ServiceTemplateComponent,
   ],
   imports: [
     BrowserModule,
