@@ -10,6 +10,8 @@ import { CommonService } from '../Services/common.service';
 export class EventBindingComponent implements OnInit {
 
   public age: number | any = 18;
+  public name: string | any = "ManhKM";
+  public vehicles = ['Toyota', 'Honda', 'Nissan'];
 
   // public component: ComponentIfComponent | any = new ComponentIfComponent();
 
@@ -22,13 +24,13 @@ export class EventBindingComponent implements OnInit {
   }
 
   tangtuoi(): void {
-    this.common.age++;
-    this.age = this.common.age;
+    this.age++;
+    this.vehicles.push(this.name + "-" + this.age)
   }
 
   giamtuoi(): void{
-    this.common.age--;
-    this.age = this.common.age;
+    this.age--;
+    this.vehicles.pop();
   }
 
 }

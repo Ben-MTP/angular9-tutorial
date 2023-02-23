@@ -1,15 +1,8 @@
-<!-- 
-<app-component-demo></app-component-demo>
+<h2> Hướng dẫn tạo menu cơ bản</h2>
 
-<app-component-if></app-component-if>
-
-<app-binding-way></app-binding-way>
-
-<app-event-binding></app-event-binding>
-
-<app-component-pipe></app-component-pipe>
-
-<app-component-routing></app-component-routing> -->
+<p>Tạo một Component bằng lệnh: ng generate component compnent_name <br>
+sau đó link đến các Component đó bằng việc đặt các routerLink/app.component.html <br>
+Tiếp đến là đặt các NgModule trong app.module.ts để việc import Component cần quản lý</p>
 
 <a routerLink="/" routerLinkActive="router-link-active">Home</a>
 &nbsp;|
@@ -20,5 +13,7 @@
 <a routerLink="/routing" routerLinkActive="router-link-active">Routing</a>
 &nbsp;|
 <a routerLink="/eventbinding" routerLinkActive="router-link-active">Event binding</a>
+&nbsp;|
+<a routerLink="/ng-template" routerLinkActive="router-link-active">Ng Template</a>
 &nbsp;|
 <router-outlet></router-outlet>

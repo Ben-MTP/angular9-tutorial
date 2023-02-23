@@ -23,6 +23,8 @@
 
 </p>
 
+<div class="myCss">Hello: {{name}}</div>
+
 <div>Số tuổi hiện tại là: {{age | number}}</div>
 <span *ngIf="age < 0">Số tuổi của bạn không thể nhỏ hơn 0</span>
 <span *ngIf="age > 18">Bạn đã trên 18 tuổi</span>
@@ -30,6 +32,19 @@
 <span *ngIf="age < 17; then condition1; else condition2"></span>
 
 <ng-template #condition1>Bạn dưới 17 tuổi</ng-template>
-<ng-template #condition2>Bạn trên 17 tuổi</ng-template>
+<ng-template #condition2>Bạn trên 17 tuổi</ng-template> <br>
+
 <button (click)="tangtuoi()">Tăng</button>
-<button (click)="giamtuoi()">Giảm</button>
+<button (click)="giamtuoi()">Giảm</button> <br>
+
+List vehicles:
+
+<ul>
+  <li *ngFor="let vehicle of vehicles">{{vehicle}}</li>
+</ul>
+
+<h2>Nội dung bài học</h2>
+
+<p>
+  Trong Angular để so sánh thì dùng với === 3 dấu bằng, chứ không phải 2 dấu bằng. <br>
+</p>

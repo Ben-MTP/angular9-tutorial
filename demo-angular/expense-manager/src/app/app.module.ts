@@ -14,6 +14,7 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ServiceComponent } from './service/service.component';
+import { NgTemplateComponent } from './ng-template/ng-template.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ServiceComponent } from './service/service.component';
     HomeComponent,
     PageNotFoundComponent,
     ServiceComponent,
+    NgTemplateComponent,
   ],
   imports: [
     BrowserModule,

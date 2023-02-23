@@ -9,12 +9,14 @@ import { ComponentRoutingComponent } from './component-routing/component-routing
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { NgTemplateComponent } from './ng-template/ng-template.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
+  {path: 'about', component: AboutComponent},
   {path: 'eventbinding', component: EventBindingComponent},
   {path: 'bindingway', component: BindingWayComponent},
-  {path: 'about', component: AboutComponent},
+  {path: 'ng-template', component: NgTemplateComponent},
   {path: 'demo', component: ComponentDemoComponent},
   {path: 'pipe', component: ComponentPipeComponent},
   {path: 'routing', component: ComponentRoutingComponent},

@@ -1,0 +1,17 @@
+<h2>Ng-Template in Angular</h2>
+
+<h3>Hướng dẫn sử dụng</h3>
+
+<p>Hướng dẫn {{age}} trong đó: <br>
+  ng: Angular Template<br>
+  nếu đúng thì vào điều kiện 1, còn sai thì vào điều kiện 2<br>
+</p>
+
+Current Age: {{age}} <br>
+<button (click)="tangtuoi()">Tăng</button>
+<button (click)="giamtuoi()">Giảm</button> <br>
+
+<span *ngIf="age >= 18; then condition1; else condition2"> </span>
+
+<ng-template #condition1 class="uderAge">Lớn hơn 18+</ng-template>
+<ng-template #condition2 class="overAge">Bé hơn 18+</ng-template>

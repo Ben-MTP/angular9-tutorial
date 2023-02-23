@@ -6,7 +6,10 @@ import { CommonService } from '../Services/common.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
 export class HomeComponent implements OnInit {
+
+  public age: number = 18;
 
   constructor(private common: CommonService) {
     
