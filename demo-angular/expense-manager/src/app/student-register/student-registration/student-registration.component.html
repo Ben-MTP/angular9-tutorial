@@ -1,0 +1,30 @@
+<h2>Đăng ký thông tin sinh viên</h2>
+
+<form #studentForm="ngForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="fullName">Họ tên đầy đủ:</label>
+    <input type="text" class="form-control" id="fullName" name="fullName" [(ngModel)]="student.fullName" required>
+  </div>
+  <div class="form-group">
+    <label for="dob">Ngày tháng năm sinh:</label>
+    <input type="date" class="form-control" id="dob" name="dob" [(ngModel)]="student.dob" required>
+  </div>
+  <div class="form-group">
+    <label for="hometown">Quê quán:</label>
+    <input type="text" class="form-control" id="hometown" name="hometown" [(ngModel)]="student.hometown" required>
+  </div>
+  <div class="form-group">
+    <label for="gender">Giới tính:</label>
+    <select class="form-control" id="gender" name="gender" [(ngModel)]="student.gender" required>
+      <option value=""></option>
+      <option value="male">Nam</option>
+      <option value="female">Nữ</option>
+      <option value="other">Khác</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="education">Trình độ học vấn:</label>
+    <input type="text" class="form-control" id="education" name="education" [(ngModel)]="student.education" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Đăng ký</button>
+</form>

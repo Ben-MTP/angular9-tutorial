@@ -12,7 +12,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { NgTemplateComponent } from './ng-template/ng-template.component';
 import { PipeTemplateComponent } from './pipe-template/pipe-template.component';
 import { ServiceTemplateComponent } from './service-template/service-template.component';
+import { StudentRegistrationComponent } from './student-register/student-registration/student-registration.component';
+import { StudentFormComponent } from './student-register/student-form/student-form.component';
 
+//student-form
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'about', component: AboutComponent},
@@ -21,6 +24,8 @@ const routes: Routes = [
   {path: 'ng-template', component: NgTemplateComponent},
   {path: 'pipe', component: PipeTemplateComponent},
   {path: 'service', component: ServiceTemplateComponent},
+  {path: 'student-registor', component: StudentRegistrationComponent},
+  {path: 'student-form', component: StudentFormComponent},
   {path: 'demo', component: ComponentDemoComponent},
   {path: 'pipe', component: ComponentPipeComponent},
   {path: 'routing', component: ComponentRoutingComponent},

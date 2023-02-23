@@ -23,19 +23,17 @@
 
 </p>
 
-<div class="myCss">Hello: {{name}}</div>
+<div class="myCss">Hello: <span appFont20px>{{name}}</span></div>
 
-<div>Số tuổi hiện tại là: {{age | number}}</div>
-<span *ngIf="age < 0">Số tuổi của bạn không thể nhỏ hơn 0</span>
-<span *ngIf="age > 18">Bạn đã trên 18 tuổi</span>
+<div>Số tuổi hiện tại là: <span appFont20px>{{age | number}}</span></div>
 
-<span *ngIf="age < 17; then condition1; else condition2"></span>
+<span *ngIf="age < 10; then trueCondition; else falseCondition"></span>
 
-<ng-template #condition1>Bạn dưới 17 tuổi</ng-template>
-<ng-template #condition2>Bạn trên 17 tuổi</ng-template> <br>
+<ng-template #trueCondition><span style="color: red;">Bạn dưới 10 tuổi</span></ng-template>
+<ng-template #falseCondition><span appBold>Bạn trên 10 tuổi</span></ng-template> <br>
 
-<button (click)="tangtuoi()">Tăng</button>
-<button (click)="giamtuoi()">Giảm</button> <br>
+<button (click)="tangtuoi()" appFont20px>Tăng</button>
+<button (click)="giamtuoi()" appFont20px>Giảm</button> <br>
 
 List vehicles:
 

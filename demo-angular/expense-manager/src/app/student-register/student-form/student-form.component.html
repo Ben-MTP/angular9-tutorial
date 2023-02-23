@@ -1,0 +1,41 @@
+<h2>Đăng ký thông tin sinh viên</h2>
+
+<div [formGroup]="studentForm">
+  <label>
+    Họ tên đầy đủ:
+    <input type="text" formControlName="fullName">
+  </label>
+  <br>
+  <label>
+    Ngày tháng năm sinh:
+    <input type="date" formControlName="dateOfBirth">
+  </label>
+  <br>
+  <label>
+    Quê quán:
+    <input type="text" formControlName="placeOfBirth">
+  </label>
+  <br>
+  <label>
+    Giới tính:
+    <select formControlName="gender">
+      <option value="Nam">Nam</option>
+      <option value="Nữ">Nữ</option>
+      <option value="Khác">Khác</option>
+    </select>
+  </label>
+  <br>
+  <label>
+    Trình độ học vấn:
+    <select formControlName="educationLevel">
+      <option value="Trung học phổ thông">Trung học phổ thông</option>
+      <option value="Trung cấp">Trung cấp</option>
+      <option value="Cao đẳng">Cao đẳng</option>
+      <option value="Đại học">Đại học</option>
+      <option value="Sau đại học">Sau đại học</option>
+    </select>
+  </label>
+  <br>
+
+  <button type="submit" (click)="onSubmit()">Đăng ký</button>
+</div>
