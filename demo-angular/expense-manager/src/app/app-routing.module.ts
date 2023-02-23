@@ -10,6 +10,7 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NgTemplateComponent } from './ng-template/ng-template.component';
+import { PipeTemplateComponent } from './pipe-template/pipe-template.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'eventbinding', component: EventBindingComponent},
   {path: 'bindingway', component: BindingWayComponent},
   {path: 'ng-template', component: NgTemplateComponent},
+  {path: 'pipe', component: PipeTemplateComponent},
   {path: 'demo', component: ComponentDemoComponent},
   {path: 'pipe', component: ComponentPipeComponent},
   {path: 'routing', component: ComponentRoutingComponent},

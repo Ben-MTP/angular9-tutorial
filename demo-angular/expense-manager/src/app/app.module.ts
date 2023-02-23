@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ServiceComponent } from './service/service.component';
 import { NgTemplateComponent } from './ng-template/ng-template.component';
+import { PipeTemplateComponent } from './pipe-template/pipe-template.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { NgTemplateComponent } from './ng-template/ng-template.component';
     PageNotFoundComponent,
     ServiceComponent,
     NgTemplateComponent,
+    PipeTemplateComponent,
   ],
   imports: [
     BrowserModule,

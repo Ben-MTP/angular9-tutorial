@@ -1,0 +1,35 @@
+<h2>Hướng dẫn sử dụng Pipe trong Angular</h2>
+
+<h3>Các bước thực hiện</h3>
+
+<p>
+  + Có thể sử dụng các pipe sẵn có hoặc có thể tự custom pipe. <br>
+  + Các piple build-in làm sẵn trong Angular. <br>
+  + Có thể chế ra các cái riêng làm cho logic riêng. <br>
+  ----- <br>
+
+  + Danh sách các Basic Type trong Typescript: <br>
+  Boolean, Number, String, Array, Tuple, Enum, Any, void, Null - Undefined <br>
+  ----- <br>
+  + Danh sách các Pipe thường dùng trong Angular: <br>
+  CurrencyPipe,
+  DatePipe,
+  DecimalPipe,
+  JsonPipe,
+  LowerCasePipe,
+  UpperCasePipe,
+  PercentPipe,
+  SlicePipe,
+  AsyncPipe,
+
+</p>
+
+
+<h3>Full information</h3>
+
+<div>Name: {{(fullName | lowercase) | uppercase}}</div><br>
+<div>Age: {{age}}</div><br>
+<div>Address: {{address | uppercase}}</div><br>
+<div>Salary: {{salary | currency:'VND'}}</div><br>
+<div>Date of Birth: {{dateOfBirth}}</div><br><br>
+<div>Data Vehicle: {{vehicles | json}}</div>
