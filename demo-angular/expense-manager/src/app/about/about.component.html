@@ -19,6 +19,23 @@ Chào bạn {{name}}, bạn đang là {{age}}, giới tính {{gender}} <br>
 
 <h3>Bạn có<span class="bookCss">&nbsp;{{dataBook?.length}}&nbsp;</span>quyển sách</h3>
 
+<h3>Danh sach book:</h3>
+
+<table id="customers" style="border-collapse: collapse;" >
+
+  <tr>
+    <th>ID</th>
+    <th>TITLE</th>
+    <th>AUTHOR</th>
+  </tr>
+
+  <tr *ngFor="let item of dataBook">
+    <td>{{item?.id}}</td>
+    <td>{{item?.title}}</td>
+    <td>{{item?.author}}</td>
+  </tr>
+</table>
+
 <div [formGroup]="bookForm">
 
   <label>
@@ -32,10 +49,4 @@ Chào bạn {{name}}, bạn đang là {{age}}, giới tính {{gender}} <br>
   </label>
 
   <button type="submit" (click)="onSubmitv2()">Submit</button>
-</div>
-
-<h3>Danh sach book:</h3>
-
-<div *ngFor="let data of dataBook">
-  <li>{{data | json}}</li>
 </div>
