@@ -49,5 +49,27 @@ Reactive form:
 
 16:00/28:00
 
+326: Reactive Form - Form hiện đại và ngon
 
+Phiên bản ngon hơn của Template Form
+
+
+
+327: Fake Json Server
+
+Tạo một Server giả để học HTTP
+
+
+Cài đặt Fake Server, cung cấp các Service Json để Angular gọi vào
+
+npm install -g json-server
+
+329: HTTP GET Method - Observable, subscribe, Trao đổi giữa client và Server
+
+
+Câu lệnh tạo re Service trong Angular: ng generate service Services/ServerHttp
+
+câu lệnh: ng g s Services/Serverhttp
+
+Lúc này: tạo 2 file liên quan đến Service + 1 update config trong app.module.ts
 

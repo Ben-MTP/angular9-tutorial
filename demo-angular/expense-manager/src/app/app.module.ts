@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +22,7 @@ import { BoldDirective } from './Directive/bold.directive';
 import { Font20pxDirective } from './Directive/font-20px.directive';
 import { StudentRegistrationComponent } from './student-register/student-registration/student-registration.component';
 import { StudentFormComponent } from './student-register/student-form/student-form.component';
+
 
 // Như là một nơi để quản lý toàn bộ các Component, Service, Directive trong project
 // Rất quan trọng
@@ -54,6 +56,7 @@ import { StudentFormComponent } from './student-register/student-form/student-fo
     AppRoutingModule, 
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,41 @@
 <h2>Angular 9 - Routing - Thiết lập đường dẫn giữa các trang</h2>
+
+<h3>Dữ liệu trả về trong phần Call HTTP Client</h3>
+
+Chào bạn {{name}}, bạn đang là {{age}}, giới tính {{gender}} <br>
+
+<h3>Dữ liệu sinh ra từ /book</h3>
+
+<div>{{data | json}}</div>
+
+
+<h3>Dữ liệu sinh ra từ /comments</h3>
+
+<div>{{dataComment | json}}</div>
+
+<h3>CRUD Book</h3>
+
+<br>
+
+<h3>Bạn có<span class="bookCss">&nbsp;{{dataBook?.length}}&nbsp;</span>quyển sách</h3>
+
+<div [formGroup]="bookForm">
+
+  <label>
+    Ten sach:
+    <input type="text" formControlName="title">
+  </label>
+  <br>
+  <label>
+    Tac gia:
+    <input type="text" formControlName="author">
+  </label>
+
+  <button type="submit" (click)="onSubmitv2()">Submit</button>
+</div>
+
+<h3>Danh sach book:</h3>
+
+<div *ngFor="let data of dataBook">
+  <li>{{data | json}}</li>
+</div>
